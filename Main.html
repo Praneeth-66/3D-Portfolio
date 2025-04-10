@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawasaki Portfolio</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Check if the user logged in from the login page
+        if (localStorage.getItem("loggedIn") !== "true") {
+            // If not logged in, send them back to login page
+            window.location.href = "main.html";
+        } else {
+            // Clear login session when page is closed
+            window.addEventListener("beforeunload", function () {
+                localStorage.removeItem("loggedIn");
+            });
+        }
+    });
+</script>
+<body>
+    <div class="image">
+    <div class="container">
+        <h1 style="color: whitesmoke;">3D PORTFOLIO</h1>
+        <div class="links-container">
+            <div class="a">
+                <img src="https://c0.wallpaperflare.com/preview/340/425/248/kawasaki-motorcycle-logo-brand.jpg" alt="Kawasaki Ninja ZX10R" height="250" width="250">
+                <a href="https://kawasaki-3d-portfolio.w3spaces.com/3D/Kawasaki.html">
+                    VISIT MY KAWASAKI PORTFOLIO
+                </a>
+            </div>
+            <div class="a">
+                <img src="https://images.pexels.com/photos/12191038/pexels-photo-12191038.jpeg" alt="Kawasaki Ninja ZX10R" height="250" width="250">
+                <a href="https://bmw-3d-portfolio.w3spaces.com/BMW.html" >
+                    VISIT MY BMW PORTFOLIO
+                </a>
+            </div>
+            <div class="a">
+                <img src="https://www.bossrides.in/wp-content/uploads/2023/03/kawasaki-ninja-zx10r-1-min-scaled-1.jpg" alt="Kawasaki Ninja ZX10R" height="250" width="250">
+                <a href="#">
+                    Kawasaki Racing
+                </a>
+            </div>
+            <div class="a">
+                <img src="https://www.bossrides.in/wp-content/uploads/2023/03/kawasaki-ninja-zx10r-1-min-scaled-1.jpg" alt="Kawasaki Ninja ZX10R" height="250" width="250">
+                <a href="#">
+                    Kawasaki Bikes Collection
+                </a>
+            </div>
+            <div class="a">
+                <img src="https://www.bossrides.in/wp-content/uploads/2023/03/kawasaki-ninja-zx10r-1-min-scaled-1.jpg" alt="Kawasaki Ninja ZX10R" height="250" width="250">
+                <a href="#">
+                    Kawasaki Engine Designs
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 BATCH-10 | All Rights Reserved</p>
+    </footer>
+</div>
+</body>
+</html>
